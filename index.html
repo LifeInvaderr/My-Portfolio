@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/Hero-img.jpg" />
     <title>Portfolio</title>
+
 </head>
 
 
@@ -13,31 +16,33 @@
     <!-- Header and Navigation Elements -->
     <header>
         <h1>
-            <a href="">Matthew Kaus</a>
+            <a href="">LifeInvader</a>
         </h1>
         <nav>
             <ul>
                 <li>
-                    <a href="">About Me</a>
+                    <a href="#about-me">About</a>
                 </li>
                 <li>
-                    <a href="">Work</a>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="">Contact Me</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+
     <!-- Hero Section -->
-    <section>
-        <div class="container">
-            <div class="Hero-text">
-            </div>
-            <div class="Hero-img">
-                <img src="assets/images/Hero-img.jpg" />
-            </div>
+    <section class="hero">
+        <div class="hero-img">
+        </div>
+        <div class="hero-text">
+            <h1>Welcome</h1>
+            <h2>
+                To my Portfolio
+            </h2>
         </div>
     </section>
 
@@ -47,10 +52,12 @@
     <!-- Main Elements with sections -->
     <main>
         <!-- About Me Section -->
-        <section>
+        <section class="about-me" id="about-me">
             <div class="container">
-                <div class="section-title">
-                    <h2>About Me</h2>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="content">
+                <div class="content-text">
                     <p>
                         I am a student enrolled in the University of Arizona Bootcamp for Web Development. My goal is to
                         earn a certificate in web Developmentas well as to learn programming in the long run. I beleive
@@ -58,31 +65,69 @@
                         earn a certificate in cyber-security.
                     </p>
                 </div>
+                <div class="content-img">
+                    <img class="content-image" src="assets/images/Hero-img.jpg">
+                </div>
             </div>
+
         </section>
+
+
 
 
         <!-- Work Section -->
-        <section>
+        <section class="work" id="work">
             <div class="container">
-                <div class="section-title">
-                    <h2>My Work</h2>
+                <h2 class="section-title">Work</h2>
+            </div>
+
+            <div class="work-container-1">
+                <div class="images" class="img-1">
+                    <img class="sizing-1" src="assets/images/Run-Buddy.png" />
                 </div>
             </div>
+            <div class="work-container-2">
+                <div class="images" class="img-2">
+                    <img class="sizing-2" src="assets/images/Test 2.jpg" />
+                </div>
+                <div class="images" class="img-3">
+                    <img class="sizing-2 " src="assets/images/Test 3.jpg" />
+                </div>
+                <div class="images" class="img-4">
+                    <img class="sizing-2 " src="assets/images/Test 3.jpg" />
+                </div>
+                <div class="images" class="img-5">
+                    <img class="sizing-2" src="assets/images/Test 5.jpg" />
+                </div>
+            </div>
+
+
+
         </section>
 
 
 
-        <!-- Contact Me Section-->
-        <footer>
-            <div class="container">
-                <div class="section-title">
-                    <h2>Contact Me</h2>
-                </div>
-            </div>
-        </footer>
 
     </main>
+
+
+    <!-- Contact Me Section-->
+    <footer id="contact">
+        <div>
+            <h1>Contact</h1>
+        </div>
+        <div>
+            <h2>Phone #</h2>
+        </div>
+        <div>
+            <h2>GitHub</h2>
+        </div>
+        <div>
+            <h2>Email</h2>
+        </div>
+
+
+    </footer>
 
 
 </body>

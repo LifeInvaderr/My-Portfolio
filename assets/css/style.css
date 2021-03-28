@@ -1,0 +1,251 @@
+:root {
+    --primary-color:
+    --secondary-color
+    --t
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'open sans', sans-serif;
+}
+
+/* HEADER AND NAV STYLE ELEMENTS */
+header {
+    padding: 20px 35px;
+    background-color: #2b2e4a;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.70vw;
+
+}
+
+/* FOOTER STYLE */
+footer {
+    background:#53354a;
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h1 {
+    font-size:40px;
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer div ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+
+
+
+/* STYLE FOR ALL SECTIONS */
+section {
+    padding: 60px
+}
+
+/* HERO STYLE */
+.hero {
+    background-image: url('../images/New-Mexico-3.jpg');
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.hero-text {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text h2 {
+    font-size: 22px;
+}
+
+.hero-img {
+    /* padding: 20px; */
+    width: 40%;
+    margin: 3.5%;
+}
+
+/* SECTION TITLE STYLE */
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+/* CONTAINER STYLE */
+.container {
+    display:flex;
+}
+
+/* CONTENT STYLE */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.content-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    text-align: left;
+    margin: 3.5%;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.content-img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 10px;
+    width: 30%;
+    margin: 3.5%;
+}
+
+.content-image {
+    max-width: 300px;
+    border: solid white;
+}
+
+
+/* ABOUT ME STYLE */
+.about-me {
+    background: #e84545;
+}
+
+/* WORK STYLE */
+
+.work {
+    background: #903749;
+}
+
+.images {
+    padding: 10px;
+}
+
+.work-container-1 {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.work-container-2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.sizing-2 {
+    display: block;
+    flex-basis: 50%;
+    max-width: 800px;
+}
+
+
+
+
+
+
+/* CONTACT STYLE */
+
+
+
+
+
+
+
+
+/* UTILITIES */
