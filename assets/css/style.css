@@ -1,7 +1,10 @@
 :root {
-    --primary-color:
-    --secondary-color
-    --t
+    --text-color: #ffffff;
+    --border-color: #ffffff;
+    --first-color: #2b2e4a;
+    --second-color: #e84545;
+    --third-color: #903749;
+    --fourth-color: #53354a;
 }
 
 * {
@@ -11,14 +14,14 @@
 }
 
 body {
-    color: #ffffff;
+    color: var(--text-color);
     font-family: 'open sans', sans-serif;
 }
 
 /* HEADER AND NAV STYLE ELEMENTS */
 header {
     padding: 20px 35px;
-    background-color: #2b2e4a;
+    background-color: var(--first-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,12 +32,12 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 40px;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 header a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 header nav {
@@ -58,23 +61,26 @@ header nav ul li a {
 
 /* FOOTER STYLE */
 footer {
-    background:#53354a;
-    padding: 40px 35px;
+    background: var(--fourth-color);
+    padding: 20px 35px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 footer h1 {
-    font-size:40px;
+    font-weight: bold;
     margin: 0;
+    font-size: 38px;
 }
 
-footer h2 {
-    font-size: 30px;
-    margin: 0;
+footer a {
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+footer div {
+    margin: 7px 0;
 }
 
 footer div ul {
@@ -85,21 +91,11 @@ footer div ul {
     list-style: none;
 }
 
-footer div ul li a {
+footer div ul li {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
-
+    font-size: 1.25vw;
 }
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-
-
-
 
 /* STYLE FOR ALL SECTIONS */
 section {
@@ -125,7 +121,7 @@ section {
 .hero-text {
     width: 35%;
     text-align: right;
-    margin: 3.5%;
+    margin: 8%;
     padding: 30px;
     font-size: 18px;
     line-height: 1.2;
@@ -147,7 +143,7 @@ section {
 
 /* SECTION TITLE STYLE */
 .section-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 3px solid;
@@ -157,95 +153,109 @@ section {
     width: 50%;
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-}
-
-/* CONTAINER STYLE */
-.container {
-    display:flex;
+    color: var(--text-color);
 }
 
 /* CONTENT STYLE */
 .content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .content-text {
-    display: flex;
-    flex-wrap: wrap;
     width: 35%;
     text-align: left;
     margin: 3.5%;
     padding-top: 30px;
-    font-size: 18px;
+    font-size: 24px;
+    font-size: 1.5vw;
     line-height: 1.2;
 }
 
 .content-img {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 10px;
     width: 30%;
-    margin: 3.5%;
 }
 
 .content-image {
     max-width: 300px;
-    border: solid white;
+    border: solid 3px var(--border-color);
 }
 
 
 /* ABOUT ME STYLE */
 .about-me {
-    background: #e84545;
+    background: var(--second-color);
 }
 
 /* WORK STYLE */
 
 .work {
-    background: #903749;
+    background: var(--third-color);
 }
 
-.images {
-    padding: 10px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-container-1 {
-    display: flex;
-    justify-content: center;
-    max-width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .work-container-2 {
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
+.sizing-1 {
+    width: 1200px;
+    border: solid 3px var(--border-color);
 }
 
 .sizing-2 {
-    display: block;
-    flex-basis: 50%;
-    max-width: 800px;
+    width: 500px;
+    border: solid 3px var(--border-color);
+}
+
+
+/* MEDIA QUERY FOR SMALL SCREENS */
+@media screen and (max-width: 1280px) {
+
+    img.sizing-1 {
+        max-width: 100%;
+    }
+
+    img.sizing-2 {
+        width: 100%;
+    }
 }
 
 
 
 
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 5px;
+        justify-content: center;
+        position: relative;
+    }
 
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
 
-/* CONTACT STYLE */
+    header nav ul {
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-/* UTILITIES */
+    .content {
+        flex-direction: column ;
+    }
+}
