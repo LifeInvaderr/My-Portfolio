@@ -258,4 +258,14 @@ section {
     .content {
         flex-direction: column ;
     }
+
+    .content-img {
+        max-width: 50%;
+        align-items: center;
+    }
+
+    .content-image {
+        max-width: 50%;
+    }
+    
 }
